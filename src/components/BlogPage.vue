@@ -64,7 +64,7 @@ export default {
     methods: {
         loadAllPosts() {
             axios.request({
-                url: 'http://marcfsdblogspot.ga/api/posts',
+                url: 'https://marcfsdblogspot.ga/api/posts',
                 method: "GET",
                 headers: {
                     'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ export default {
             // checks if there is any input and makes sure input is not just whitespace
             if (userInput != '' && userInput.trim().length) {
                 axios.request({
-                    url: 'http://marcfsdblogspot.ga/api/posts',
+                    url: 'https://marcfsdblogspot.ga/api/posts',
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'

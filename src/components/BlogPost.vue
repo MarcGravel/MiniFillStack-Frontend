@@ -61,7 +61,7 @@ import { eventBus } from '../main'
         methods: {
             sendUpdate(id, content) {
                 axios.request({
-                    url: 'http://127.0.0.1:5000/api/posts',
+                    url: 'http://marcfsdblogspot.ga/api/posts',
                     method: "PATCH",
                     headers: {
                         'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ import { eventBus } from '../main'
             },
             deletePost(postId) {
                 axios.request({
-                    url: 'http://127.0.0.1:5000/api/posts',
+                    url: 'http://marcfsdblogspot.ga/api/posts',
                     method: "DELETE",
                     headers: {
                         'Content-Type': 'application/json'
